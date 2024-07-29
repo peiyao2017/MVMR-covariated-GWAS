@@ -1,0 +1,24 @@
+#!/bin/bash -l
+#SBATCH --time=10:00:00
+#SBATCH -p msismall  
+#SBATCH --mem=100G
+#SBATCH --tmp=100g
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=wan01299@umn.edu
+#SBATCH -o /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMInogene2.out
+
+
+
+
+#module load plink
+module load plink/2.00-alpha-091019
+
+
+
+
+cd "/panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/"
+
+  
+
+plink2 --bfile /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/110K_QCed1 --pheno BMI.txt --pheno-name BMI --covar BMI.txt --covar-name sex, age, GenPC1-GenPC10, metPCnoGen1-metPCnoGen2   --variance-standardize --glm hide-covar --out GWAS_2MetPCNoGenadj 
+ 

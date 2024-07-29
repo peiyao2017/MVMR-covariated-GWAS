@@ -1,0 +1,26 @@
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMI_1MetPCadj.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMI_1MetPCnoGenadj.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMI_2MetPCadj.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMI_2MetPCnoGenadj.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMI_3MetPCadj.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMI_3MetPCnoGenadj.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMI_4MetPCadj.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMI_4MetPCnoGenadj.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMI_5MetPCadj.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwas_BMI_5MetPCnoGenadj.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP/gwas_SBP.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP/gwas_DBP.txt
+
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwasMetPC1.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwasMetPC2.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwasMetPC3.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwasMetPC4.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwasMetPC5.txt
+
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwasMetPCnoGen1.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwasMetPCnoGen2.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwasMetPCnoGen3.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwasMetPCnoGen4.txt
+sbatch -p msismall /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BMI/gwasMetPCnoGen5.txt
+
+ 
