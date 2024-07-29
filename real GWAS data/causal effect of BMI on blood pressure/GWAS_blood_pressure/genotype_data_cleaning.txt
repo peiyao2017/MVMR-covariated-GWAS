@@ -1,0 +1,19 @@
+#!/bin/bash -l
+#SBATCH --time=2:00:00
+#SBATCH -p ram1t,amd2tb,amd512
+#SBATCH --mem=100G
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=wan01299@umn.edu
+#SBATCH -o /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP/BP_geno.out
+#SBATCH -e /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP/error.$J
+ 
+cd "/panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP/"
+
+module load plink
+for i in {1..22}
+do
+plink --bfile /home/panwei/shared/UKBiobankIndiv/genetic_data/ukb_cal_chr${i}_v2 --keep BP_ID.txt --geno 0.05 --maf 0.01 --hwe 1e-6 --make-bed --out chr${i} 
+done
+
+
+plink --bfile chr1 --merge-list  /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP/mergelist.txt --make-bed --out 110K_QCed1

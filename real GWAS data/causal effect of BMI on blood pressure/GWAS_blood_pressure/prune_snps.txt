@@ -1,0 +1,17 @@
+#!/bin/bash -l
+#SBATCH --time=2:00:00
+#SBATCH -p ram1t,amd2tb,amd512
+#SBATCH --mem=100G
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=wan01299@umn.edu
+#SBATCH -o /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP/prune.out
+#SBATCH -e /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP/error.$J
+module load plink
+ 
+cd "/panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP"
+
+
+
+plink --bfile /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP/110K_QCed1 --indep-pairwise 50 5 0.001
+
+plink --bfile /panfs/jay/groups/20/panwei/wan01299/paper2/real_data/gwas_BP/110K_QCed1 --extract plink.prune.in --make-bed --out 110K_QCed0.001
